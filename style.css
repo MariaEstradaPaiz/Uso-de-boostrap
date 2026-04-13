@@ -1,0 +1,58 @@
+.mi-navbar {
+  background-color: #0a1628;
+}
+
+.seccion-hero {
+  background: linear-gradient(135deg, #0a1628, #1565c0);
+  padding: 100px 20px;
+}
+
+.btn-naranja {
+  background-color: #1d6fa4;
+  color: white;
+  border: none;
+}
+
+.btn-naranja:hover {
+  background-color: #155d8a;
+  color: white;
+}
+
+.mi-precio {
+  color: #1d6fa4;
+}
+
+.card-destacada {
+  border: 2px solid #1d6fa4;
+}
+
+.seccion-gris {
+  background-color: #f8f9fa;
+}
+
+.seccion-oscura {
+  background-color: #0a1628;
+}
+
+.mi-modal-header {
+  background-color: #1d6fa4;
+}
+
+.mi-footer {
+  background-color: #060e1a;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 576px) {
+  .carousel-item p {
+    font-size: 16px;
+  }
+
+  .seccion-hero {
+    padding: 60px 15px;
+  }
+}
