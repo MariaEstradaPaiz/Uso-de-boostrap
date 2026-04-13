@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark mi-navbar">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="#inicio">FitLife Studio</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-hero text-center text-white" id="inicio">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Transforma tu cuerpo,<br>transforma tu vida</h1>
+                <p class="lead mt-3">Entrenamiento funcional, clases grupales y planes personalizados para todos los
+                    niveles.</p>
+
+                <a href="#servicios" class="btn btn-warning btn-lg mt-3 me-2">Ver servicios</a>
+                <button type="button" class="btn btn-outline-light btn-lg mt-3" data-bs-toggle="modal"
+                    data-bs-target="#modalInscripcion">
+                    Inscribirme ahora
+                </button>
+            </div>
+        </section>
+
+        <div class="modal fade" id="modalInscripcion" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header mi-modal-header">
+                        <h5 class="modal-title text-white">¡Quiero inscribirme!</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-muted">Dejanos tus datos y te contactamos en menos de 24 horas.</p>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Correo electronico</label>
+                            <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Plan de interes</label>
+                            <select class="form-select">
+                                <option>Basico</option>
+                                <option>Pro</option>
+                                <option>Elite</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-naranja">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="py-5" id="servicios">
+            <div class="container">
+                <h2 class="text-center mb-2">Nuestros planes</h2>
+                <p class="text-center text-muted mb-5">Elige el que mejor se adapte a ti</p>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Plan Basico</h5>
+                                <p class="card-text text-muted">Acceso al gym de lunes a viernes. Perfecto para empezar
+                                    tu camino fitness.</p>
+                                <p class="fw-bold fs-4 mi-precio">Q299/mes</p>
+                                <button class="btn btn-naranja w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalInscripcion">
+                                    Elegir plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow card-destacada">
+                            <div class="card-body text-center">
+                                <span class="badge bg-warning text-dark mb-2">Mas popular</span>
+                                <h5 class="card-title">Plan Pro</h5>
+                                <p class="card-text text-muted">Acceso ilimitado + 4 clases grupales al mes +
+                                    seguimiento nutricional.</p>
+                                <p class="fw-bold fs-4 mi-precio">Q499.99/mes</p>
+                                <button class="btn btn-naranja w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalInscripcion">
+                                    Elegir plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Plan Elite</h5>
+                                <p class="card-text text-muted">Todo incluido + entrenador personal + clases ilimitadas
+                                    + evaluacion mensual.</p>
+                                <p class="fw-bold fs-4 mi-precio">Q799.99/mes</p>
+                                <button class="btn btn-naranja w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalInscripcion">
+                                    Elegir plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 seccion-gris" id="testimonios">
+            <div class="container">
+                <h2 class="text-center mb-2">Lo que dicen nuestros miembros</h2>
+                <p class="text-center text-muted mb-5">Resultados reales de personas reales</p>
+
+                <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="text-center p-5">
+                                <p class="fs-5 fst-italic">"Llevo 3 meses en FitLife y ya baje 8 kilos. Los entrenadores
+                                    son increibles y el ambiente te motiva a dar todo."</p>
+                                <p class="fw-bold mt-3">— Maria G., Plan Pro</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="text-center p-5">
+                                <p class="fs-5 fst-italic">"Probe muchos gimnasios pero ninguno como este. Las clases
+                                    grupales son divertidas y te sacan del tedio de entrenar solo."</p>
+                                <p class="fw-bold mt-3">— Carlos M., Plan Elite</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="text-center p-5">
+                                <p class="fs-5 fst-italic">"Empece sin saber nada de ejercicio y el equipo me guio desde
+                                    cero. Ahora me siento mas fuerte y con mucha mas energia."</p>
+                                <p class="fw-bold mt-3">— Luisa P., Plan Basico</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Preguntas frecuentes</h2>
+
+                <div class="accordion" id="acordeonPreguntas">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#pregunta1">
+                                ¿Necesito experiencia previa para inscribirme?
+                            </button>
+                        </h2>
+                        <div id="pregunta1" class="accordion-collapse collapse show"
+                            data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                No, para nada. Aceptamos personas de todos los niveles, desde principiantes absolutos
+                                hasta atletas avanzados. Nuestros entrenadores adaptan cada rutina a tus capacidades.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#pregunta2">
+                                ¿Puedo cancelar mi plan en cualquier momento?
+                            </button>
+                        </h2>
+                        <div id="pregunta2" class="accordion-collapse collapse" data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                Si, no hay contratos de permanencia. Puedes cancelar o cambiar de plan con 15 dias de
+                                anticipacion sin ningun costo adicional.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#pregunta3">
+                                ¿Que incluye el seguimiento nutricional?
+                            </button>
+                        </h2>
+                        <div id="pregunta3" class="accordion-collapse collapse" data-bs-parent="#acordeonPreguntas">
+                            <div class="accordion-body">
+                                En los planes Pro y Elite incluimos una consulta mensual con nuestra nutricionista, un
+                                plan de alimentacion personalizado y seguimiento por WhatsApp durante el mes.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-5 seccion-oscura text-white" id="contacto">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+
+                        <h2 class="text-center mb-2">Contáctanos</h2>
+                        <p class="text-center text-secondary mb-4">Respondemos en menos de 24 horas</p>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" placeholder="Tu nombre completo">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Correo</label>
+                                <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Telefono (opcional)</label>
+                                <input type="tel" class="form-control" placeholder="+502 0000-0000">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensaje</label>
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Escribe tu mensaje aqui..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-naranja w-100 btn-lg">Enviar mensaje</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mi-footer text-white py-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-4 mb-3">
+                    <h5 class="fw-bold">FitLife Studio</h5>
+                    <p class="text-secondary">Tu mejor version empieza aqui.</p>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <h6>Contacto</h6>
+                    <p class="text-secondary mb-1">info@fitlifestudio.com</p>
+                    <p class="text-secondary mb-1">+502 5555-0000</p>
+                    <p class="text-secondary">Zona 10, Guatemala City</p>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <h6>Redes sociales</h6>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a href="#" class="btn btn-outline-light btn-sm">Instagram</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">Facebook</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">TikTok</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+            <p class="text-center text-secondary mb-0">© 2025 FitLife Studio</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
